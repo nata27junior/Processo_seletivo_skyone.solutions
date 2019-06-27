@@ -1,0 +1,48 @@
+﻿Responda as perguntas abaixo sobre Python
+
+1 - Como trocar o valor de duas variáveis em uma única linha de código?
+
+x, y = y, x
+
+2 - O que são "function decorators" e para que servem?
+
+Function decorators é uma implementação em Python que permite estender uma função, atribuindo-
+lhe novas funcionalidades, assim como é feito com um objeto permitindo alterar o comportamento
+da função original e estender o comportamento da nova, sem necessariamente alterar esta última. 
+Um bom exemplo disso é a decorator @login_required que verifica na sua função de view se o request é de alguem logado.
+
+3 - Quais as principais diferenças entre Python 2 e 3?
+O print requer parênteses em Python 3
+A operação de divisão traz resultados sensíveis entre ambas
+Strings em Python 2 são implicitamente do tipo ASCII, enquanto que no Python 3
+esta é UNICODE
+Python 2 possui xrange() enquanto que no 3 não
+Python 2 contém o módulo __future__
+Python 3 requer ‘as’ quando invocada manipulação/tratativa de erros
+
+4 - Python é interpretado ou compilado?
+Python é interpretado
+
+5 - Porque usar virtualenv?
+O virtualenv permite que sejam criadas “instâncias virtuais” de Python em uma única máquina, de modo que estes operam como “máquinas virtuais” (containers) isolando as configurações de pacotes, ambientes, etc. Isto é útil para quem lida com diversos projetos em paralelo - como geralmente ocorre nas empresas/startups, ou para simular a instalação em um ambiente específico.
+
+
+6 - Que modulos/funções de rede você usaria para:
+	6.1 - Gerar um ataque com pacotes hackeados
+módulo socket utilizando UDP
+
+	6.2 - Fazer um POST em um servidor HTTP
+httplib, urlib, requests
+
+
+	6.3 - Fazer o Parse de um documento HTML
+html.parser
+
+7 - Mencione um framework em Python que permite agendar e disparar funções assincronamente para múltiplos processos.
+
+os framework pode ser rabbitMQ ou aiohttp
+
+8 - No Django, que estratégia você usa para diferenciar os "settings" de produção e de desenvolvimento? 
+Configurando a variável DJANGO_SETTINGS_MODULE, como por exemplo:
+DJANGO_SETTINGS_MODULE=myapp.production_settings (produção)
+DJANGO_SETTINGS_MODULE=myapp.development_settings (desenvolvimento)
